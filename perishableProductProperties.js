@@ -1,6 +1,8 @@
+import { ProductProperties } from "./productPoperties.js";
+
 class PerishableProductProperties extends ProductProperties {
-    constructor(expirationDate) {
-        super();
+    constructor(name, price, quantity, expirationDate) {
+        super(name, price, quantity);
         this.expirationDate = expirationDate;
     }
     toString() {
