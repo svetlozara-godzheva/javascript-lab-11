@@ -8,4 +8,7 @@ class ProductProperties {
         let totalValue = this.price * this.quantity;
         return totalValue;
     }
+    toString() {
+        return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`
+    }
 }
