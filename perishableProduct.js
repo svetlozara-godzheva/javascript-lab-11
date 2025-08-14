@@ -1,6 +1,6 @@
-import { ProductProperties } from "./productProperties.js";
+import { Product } from "./product.js";
 
-class PerishableProductProperties extends ProductProperties {
+class PerishableProduct extends Product {
     constructor(name, price, quantity, expirationDate) {
         super(name, price, quantity);
         this.expirationDate = expirationDate;
@@ -10,8 +10,8 @@ class PerishableProductProperties extends ProductProperties {
     }
 }
 
-let eggs = new PerishableProductProperties("eggs", 3.93, 12, "2025-08-28");
-let mayonnaise = new PerishableProductProperties("Hellmann's Real Mayonnaise", 6.50, 1, "2025-12-14");
+let eggs = new PerishableProduct("eggs", 3.93, 12, "2025-08-28");
+let mayonnaise = new PerishableProduct("Hellmann's Real Mayonnaise", 6.50, 1, "2025-12-14");
 console.log(eggs.toString());
 console.log(mayonnaise.toString());
 
@@ -19,5 +19,5 @@ let perishableProducts = [];
 perishableProducts.push(eggs);
 perishableProducts.push(mayonnaise);
 
-ProductProperties.applyDiscount(perishableProducts, 0.1)
+Product.applyDiscount(perishableProducts, 0.1)
 console.log(perishableProducts);
