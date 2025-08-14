@@ -1,4 +1,4 @@
-import { ProductProperties } from "./productPoperties.js";
+import { ProductProperties } from "./productProperties.js";
 
 class PerishableProductProperties extends ProductProperties {
     constructor(name, price, quantity, expirationDate) {

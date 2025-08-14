@@ -15,13 +15,9 @@ export class ProductProperties {
     }
 
     static applyDiscount(products, discount) {
-        let discountedProducts = [];
         for (const product of products) {
-            const discountedProduct = { ...product };
-            discountedProduct.price = product.price * (1 - discount);
-            discountedProducts.push(discountedProduct);
+            product.price = product.price * (1 - discount);
         }
-        return discountedProducts;
     }
 }
 
