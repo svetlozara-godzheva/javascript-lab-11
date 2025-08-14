@@ -15,3 +15,9 @@ let mayonnaise = new PerishableProductProperties("Hellmann's Real Mayonnaise", 6
 console.log(eggs.toString());
 console.log(mayonnaise.toString());
 
+let perishableProducts = [];
+perishableProducts.push(eggs);
+perishableProducts.push(mayonnaise);
+
+ProductProperties.applyDiscount(perishableProducts, 0.1)
+console.log(perishableProducts);
