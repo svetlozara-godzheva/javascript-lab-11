@@ -10,7 +10,7 @@ export class Store {
     getInventoryValue() {
         let totalValue = 0;
         for (const product of this.inventory) {
-            totalValue += product.price;
+            totalValue += product.getTotalValue();
         }
         return totalValue;
     }
