@@ -7,13 +7,6 @@ let mayonnaise = new PerishableProduct("Hellmann's Real Mayonnaise", 6.50, 1, "2
 console.log(eggs.toString());
 console.log(mayonnaise.toString());
 
-let perishableProducts = [];
-perishableProducts.push(eggs);
-perishableProducts.push(mayonnaise);
-
-Product.applyDiscount(perishableProducts, 0.1)
-console.log(perishableProducts);
-
 let mainStore = new Store();
 
 let bag = new Product("bag", 0.50, 3);
@@ -26,5 +19,8 @@ mainStore.addProduct(bag);
 mainStore.addProduct(plate);
 mainStore.addProduct(mug);
 
+console.log(mainStore.getInventoryValue());
+
+Product.applyDiscount([eggs, mayonnaise, bag, plate, mug], 0.15);
 console.log(mainStore.getInventoryValue());
 
