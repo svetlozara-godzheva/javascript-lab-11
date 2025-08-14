@@ -20,3 +20,9 @@ let bag = new Product("bag", 0.50, 3);
 let plate = new Product("plate", 3, 2);
 let mug = new Product("mug", 10, 2);
 
+mainStore.addProduct(eggs);
+mainStore.addProduct(mayonnaise);
+mainStore.addProduct(bag);
+mainStore.addProduct(plate);
+mainStore.addProduct(mug);
+
