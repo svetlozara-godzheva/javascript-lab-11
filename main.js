@@ -26,3 +26,5 @@ mainStore.addProduct(bag);
 mainStore.addProduct(plate);
 mainStore.addProduct(mug);
 
+console.log(mainStore.getInventoryValue());
+
