@@ -24,4 +24,6 @@ console.log(mainStore.getInventoryValue());
 Product.applyDiscount([eggs, mayonnaise, bag, plate, mug], 0.15);
 console.log(mainStore.getInventoryValue());
 
-console.log(mainStore.findProductByName("eggs"));
+console.log(mainStore.findProductByName("eggs").toString());
+console.log(mainStore.findProductByName("mug").toString());
+
